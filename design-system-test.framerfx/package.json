@@ -1,0 +1,22 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.4.16"
+	},
+	"peerDependencies": {
+		"framer": "^0.10",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"version": "1.1.0",
+	"dependencies": {
+		"styled-components": "^4.2.0"
+	},
+	"framer": {
+		"id": "2b4ff7df-1d64-46de-83c2-31ac8221486c",
+		"displayName": "Design System Test"
+	},
+	"author": "Varun Vachhar",
+	"name": "@framer/rangle.design-system-test"
+}

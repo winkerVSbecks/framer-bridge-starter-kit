@@ -1,26 +1,26 @@
-import * as React from "react"
-import { theme } from "../theme"
-import styled from "styled-components"
+import * as React from 'react';
+import { theme } from '../theme';
+import styled from 'styled-components';
 
 // Types
 export type Props = {
   /** Disable Toggle */
-  disabled?: boolean
+  disabled?: boolean;
 
   /** Set on state  */
-  on?: boolean
+  on?: boolean;
 
   /** Click handler */
-  onClick?: React.MouseEventHandler<HTMLDivElement>
-}
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+};
 
 // Component
 export const Toggle: React.FC<Props> = ({ disabled, on, onClick }) => (
   <StyledToggle
-    className={`${disabled ? "disabled" : ""} ${on ? "on" : ""}`}
+    className={`${disabled ? 'disabled' : ''} ${on ? 'on' : ''}`}
     onClick={onClick}
   />
-)
+);
 
 // Styling
 const StyledToggle = styled.span`
@@ -37,7 +37,7 @@ const StyledToggle = styled.span`
   width: 64px;
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     height: 30px;
@@ -61,4 +61,4 @@ const StyledToggle = styled.span`
     pointer-events: none;
     opacity: 0.5;
   }
-`
+`;
